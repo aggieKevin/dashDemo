@@ -1,0 +1,263 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: gray;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 5em;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.main {
+  margin-top: 50px;
+  overflow: scroll;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.inner {
+  padding: 60px 20px;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  align: center;
+}
+
+.col-lg-4 {
+  padding: 0 !important;
+}
+
+.wrapper:hover img {
+  opacity: 0.2;
+}
+
+.blog:hover .blog-inner {
+  top: 0;
+}
+
+.word:hover .word-inner {
+  top: 0;
+}
+
+.recipe:hover .recipe-inner {
+  top: 0;
+}
+
+.tower:hover .tower-inner {
+  top: 0;
+}
+
+.children:hover .children-inner {
+  top: 0;
+}
+
+.flashcard:hover .flashcard-inner {
+  top: 0;
+  left: 10%;
+}
+
+.block {
+  opacity: .9;
+  display: block;
+  padding: 10px;
+}
+
+
+
+.nav-pills {
+  font-size: 1.7em;
+  color: white;
+}
+
+.btn-default {
+  background-color: none;
+  border-color: black;
+  font-size: 1.5em;
+}
+
+.intro {
+  background: url("https://images.unsplash.com/photo-1504198266287-1659872e6590?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cdc5b96cfce7ed1710409aaee2cd22c1&auto=format&fit=crop&w=2550&q=80");
+  background-size: cover;
+  height: 800px;
+  margin-top:auto;
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+.fa {
+  color: gray;
+  margin: 0 10px;
+}
+
+.footer {
+  margin-top: 30px;
+}
+
+#navigation {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+#navigation a {
+  color: black;
+  font-weight: 700;
+}
+
+
+#header h1 {
+  font-weight: 600;
+  color: black;
+}
+
+#portfolio, #about {
+  margin-top: 3em;
+}
+
+#about {
+  margin: 50px 0;
+}
+
+#about-content {
+  margin: 150px 0;
+}
+
+#portfolio-intro {
+  height: 400px;
+  position: relative;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+#portfolio-text h2 {
+  font-size: 6em;
+  color: black;
+}
+
+#intro-text {
+  padding: 10 20px;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#profile-pic {
+  width: 12%;
+  border-radius: 60%;
+}
+
+#tech-stack {
+  margin: 100px auto;
+}
+
+#tech-stack h1 {
+  color: black;
+}
+
+#skills {
+  margin-top: 60px;
+}
+
+#skills p {
+  text-align: justify;
+}
+
+#skills h3 {
+  font-weight: 900;
+  color: black;
+}
+
+#contact {
+  background-image: url("img/greece.jpg");
+}
+
+#contact-text {
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+#contact-first-row {
+  margin-bottom: 5px;
+}
+
+#email-row div{
+  padding: 1;
+}
+
+#contact-second-row {
+  height: 80px;
+  margin-bottom: 2em;
+}
+
+#submit-button {
+  background-color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: black;
+  border: none;
+}
+
+#social-media {
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 725px) {
+  .topnav li:not(:first-child) {display: none;}
+  .topnav li.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive li {
+    float: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+  }
+  #navigation {
+    position: relative;
+  }
+}

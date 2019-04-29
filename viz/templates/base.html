@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'viz/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat|Raleway" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+    <title>Mark Wang's Portfolio</title>
+  </head>
+  <body>
+    <div id="navigation">
+        {% if user.is_authenticated %}
+      <ul id="myTopnav" class="topnav nav nav-pills">
+        <li class="pull-right"><a href="/logout">Logout</a></li>
+        <li class="pull-right"><a href="/viz">Dash Demo</a></li>
+
+        <li id="hamburger" class="icon"><a href="javascript:void(0);" onclick="toggleNavbar()">&#9776;</a></li>
+      </ul>
+      {% else %}
+      <ul id="myTopnav" class="topnav nav nav-pills">
+          <li class="pull-right"><a href="/login/">Login</a></li>
+         
+        </ul>
+      {% endif %}
+    </div>
+    {% block body%}
+    <h1>Base</h1>
+    {% endblock%}
+  </body>
+</html>
